@@ -1,0 +1,543 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  background-color: #f9f3eb;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+}
+
+.w-2 {
+  width: 50%;
+}
+
+.w-3 {
+  width: 33.33%;
+}
+
+.py {
+  padding: 112px 0px;
+}
+
+.py2 {
+  padding-bottom: 112px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h5 {
+  color: orange;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+p {
+  color: #888888;
+}
+
+.join .join-item .join-btn, .review-btn a, .why .why-2 .why-btn a, .recent .recent-contant .recent-body .recent-btn, .about .about1 .about-btn, .benner .banner-contant .item1 .btn {
+  background-color: orange;
+  color: white;
+  border: 2px solid transparent;
+  padding: 12px 20px;
+  font-size: 12px;
+  border-radius: 30px;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  transition: all 0.2s linear;
+}
+
+.join .join-item .join-btn:hover, .review-btn a:hover, .why .why-2 .why-btn a:hover, .recent .recent-contant .recent-body .recent-btn:hover, .about .about1 .about-btn:hover, .benner .banner-contant .item1 .btn:hover {
+  color: orange;
+  background-color: white;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+}
+
+header {
+  position: absolute;
+  z-index: 9;
+  width: 100%;
+}
+header .logo h2 a {
+  color: white;
+  font-size: 20px;
+}
+header nav ul .dropdown {
+  position: relative;
+}
+header nav ul .dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+header nav ul .dropdown .dropdown-menu {
+  position: absolute;
+  background-color: white;
+  width: 160px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.2s linear;
+  z-index: 9;
+  top: 100%;
+  left: 0;
+}
+header nav ul .dropdown .dropdown-menu ul {
+  margin: 20px 0px;
+}
+header nav ul .dropdown .dropdown-menu ul .sub {
+  position: relative;
+}
+header nav ul .dropdown .dropdown-menu ul .sub a i {
+  right: -50px;
+}
+header nav ul .dropdown .dropdown-menu ul .sub:hover .sub-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+header nav ul .dropdown .dropdown-menu ul .sub .sub-menu {
+  position: absolute;
+  background-color: white;
+  width: 160px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.2s linear;
+  bottom: -90px;
+  right: -150px;
+}
+header nav ul .dropdown .dropdown-menu ul .sub .sub-menu ul li a {
+  color: black;
+  transition: all 0.2s linear;
+}
+header nav ul .dropdown .dropdown-menu ul .sub .sub-menu ul li a:hover {
+  color: orange;
+}
+header nav ul .dropdown .dropdown-menu ul li {
+  padding: 5px 0;
+}
+header nav ul .dropdown .dropdown-menu ul li a {
+  font-size: 14px;
+  color: black;
+  transition: all 0.2s linear;
+}
+header nav ul .dropdown .dropdown-menu ul li a:hover {
+  color: orange;
+}
+header nav ul li {
+  padding: 25px 0;
+}
+header nav ul li a {
+  position: relative;
+  color: rgba(255, 255, 255, 0.7529411765);
+  font-size: 16px;
+  margin: 0px 15px;
+}
+header nav ul li a:hover {
+  color: white;
+}
+header nav ul li a i {
+  position: absolute;
+  right: -25px;
+  bottom: -4px;
+  font-size: 25px;
+}
+
+.benner {
+  position: relative;
+  max-width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/hero_1.jpg.webp");
+}
+.benner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5098039216);
+}
+.benner .banner-contant {
+  z-index: 1;
+}
+.benner .banner-contant .item1 {
+  text-align: left;
+  margin-right: 123px;
+}
+.benner .banner-contant .item1 :nth-child(1) {
+  color: rgba(255, 255, 255, 0.5058823529);
+  margin: 0px 0px 30px;
+}
+.benner .banner-contant .item1 :nth-child(2) {
+  color: white;
+  font-size: 40px;
+  margin: 0px 0px 8px;
+}
+.benner .banner-contant .item1 :nth-child(3) {
+  line-height: 24px;
+  font-size: 16px;
+  color: white;
+  margin-bottom: 48px;
+}
+.benner .banner-contant .item2 {
+  position: relative;
+}
+.benner .banner-contant .item2 a img {
+  border-radius: 4px;
+}
+.benner .banner-contant .item2 a .play {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  color: white;
+  font-size: 30px;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  border: 2px solid rgba(255, 255, 255, 0.5058823529);
+  border-radius: 50%;
+}
+
+.about .about1 {
+  margin-right: 123px;
+}
+.about .about1 h2 {
+  margin: 24px 0px 24px 0px;
+}
+.about .about1 p {
+  font-size: 16px;
+  margin-bottom: 18px;
+}
+.about .about1 .about-btn {
+  margin-top: 20px;
+}
+.about .about2 {
+  height: 100%;
+}
+.about .about2 img {
+  border-radius: 4px;
+}
+
+.recent .recent-title h2 {
+  margin: 24px 0px 48px 0px;
+}
+.recent .recent-contant {
+  padding: 0px 24px;
+}
+.recent .recent-contant a img {
+  border-radius: 4px;
+}
+.recent .recent-contant .recent-body {
+  padding: 12px;
+}
+.recent .recent-contant .recent-body h5 {
+  color: #888888;
+}
+.recent .recent-contant .recent-body h3 {
+  margin: 10px 0px 10px 0px;
+}
+.recent .recent-contant .recent-body h3 a {
+  color: black;
+  font-size: 20px;
+}
+.recent .recent-contant .recent-body p {
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 48px;
+}
+.recent .recent-contant .recent-body .recent-btn {
+  font-size: 10px;
+}
+.why {
+  background-color: #10495c;
+}
+.why .why-title h2 {
+  margin-top: 24px;
+  color: white;
+}
+.why .why-p p {
+  color: white;
+  margin: 0px 0px 0px 112px;
+}
+.why .why-img {
+  position: relative;
+}
+.why .why-img a img {
+  margin-top: 48px;
+}
+.why .why-img a .why-play {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  color: white;
+  font-size: 30px;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  border: 2px solid rgba(255, 255, 255, 0.5058823529);
+  border-radius: 50%;
+}
+.why .why-2 {
+  margin: 40px 0px 0px 112px;
+}
+.why .why-2 .why-btn {
+  margin-top: 40px;
+}
+.why .why-2 .why-btn a {
+  font-size: 10px;
+}
+.why .why-2 .why-contant {
+  padding: 0px 12px;
+  margin: 24px 0px 10px;
+}
+.why .why-2 .why-contant h6 {
+  color: white;
+  margin-bottom: 8px;
+  font-size: 12px;
+}
+.why .why-2 .why-contant p {
+  color: rgba(255, 255, 255, 0.5019607843);
+}
+
+.review h2 {
+  margin: 24px 0px 30px 0px;
+}
+
+.review-item {
+  background-color: white;
+  padding: 50px 100px;
+  border-radius: 10px;
+}
+.review-item p {
+  margin: 30px 0px 16px 0px;
+  color: black;
+}
+.review-item .review-person img {
+  width: 40px;
+  border-radius: 50%;
+  margin: 0px 48%;
+}
+.review-item .review-person h5 {
+  color: black;
+}
+.review-item .review-person p {
+  margin: 0;
+}
+
+.review-btn {
+  margin-top: 50px;
+}
+.review-btn a {
+  font-size: 10px;
+  padding: 12px 24px;
+}
+.work {
+  margin: 0px 150px;
+}
+.work .work-item .work-img {
+  height: 100%;
+  padding: 20px;
+  position: relative;
+}
+.work .work-item .work-img:hover .overly {
+  opacity: 1;
+  visibility: visible;
+}
+.work .work-item .work-img:hover .overly .work-contant {
+  transform: translateY(0px);
+}
+.work .work-item .work-img .overly {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.462745098);
+  border-radius: 30px;
+  opacity: 0;
+  visibility: hidden;
+  border: 2px solid #c67a13;
+  margin: 40px;
+  transition: all 0.2s linear;
+}
+.work .work-item .work-img .overly .work-contant {
+  text-align: center;
+  transform: translateY(50px);
+  transition: all 0.2s linear;
+}
+.work .work-item .work-img .overly .work-contant h2 {
+  color: white;
+  border-bottom: 2px solid #c67a13;
+  padding: 20px;
+  display: block;
+}
+.work .work-item .work-img .overly .work-contant a {
+  color: white;
+  background-color: orange;
+  margin: 20px;
+  padding: 10px 20px;
+}
+.work .work-item .work-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.service {
+  background-color: white;
+  padding: 112px 0px;
+  margin-bottom: -50px;
+  position: relative;
+}
+.service .service-title h2 {
+  margin: 24px 0px 30px 0px;
+}
+.service .service-item {
+  padding: 20px;
+}
+.service .service-item h3 {
+  margin: 24px 0px 10px 0px;
+}
+.service .service-item p {
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+.service .service-item a {
+  color: orange;
+}
+.service .service-item a:hover {
+  color: #c67a13;
+}
+.service .service-item img {
+  margin-left: 40%;
+  width: 60px;
+}
+
+.join {
+  background-color: #10495c;
+  padding: 10rem 0px 7rem 0px;
+}
+.join .join-item h2 {
+  color: white;
+}
+.join .join-item .join-btn {
+  padding: 14px 48px;
+}
+footer {
+  background-color: #EDE1D0;
+  padding: 70px 0px;
+}
+footer .footer-item h4 {
+  color: #10495C;
+  margin-bottom: 15px;
+}
+footer .footer-item address {
+  color: #888888;
+}
+footer .footer-item ul li {
+  margin: 10px 0px;
+  width: 150px;
+}
+footer .footer-item ul li a {
+  color: #888888;
+  border-bottom: 2px solid rgba(198, 123, 19, 0.1607843137);
+  transition: all 0.2s linear;
+}
+footer .footer-item ul li a:hover {
+  color: black;
+  border-bottom: 2px solid orange;
+}
+footer .footer-item .footer-icon li {
+  width: 45px;
+}
+footer .footer-item .footer-icon li a {
+  color: #888888;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border-bottom: 0;
+  text-align: center;
+  border-radius: 40%;
+  line-height: 40px;
+  transition: all 0.2s linear;
+}
+footer .footer-item .footer-icon li a:hover {
+  color: white;
+  background-color: orange;
+  border-bottom: 0;
+}
+footer .copy {
+  margin-top: 70px;
+}
+footer .copy p {
+  color: #888888;
+}
+footer .copy p i {
+  color: red;
+}
+footer .copy p a {
+  color: #888888;
+  border-bottom: 2px solid rgba(198, 123, 19, 0.1607843137);
+}
+footer .copy p a:hover {
+  color: black;
+  border-bottom: 2px solid orange;
+}
+
+/*# sourceMappingURL=style.css.map */

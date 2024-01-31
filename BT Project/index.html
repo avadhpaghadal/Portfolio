@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Project</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="fonts/remixicon.css" type="text/css">
+    <link rel="stylesheet" href="fonts/stylesheet.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <!-- Headder Start -->
+    <header class="position-absolute top-0 start-0 end-0">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center p-3">
+                <div class="logo">
+                    <h2 class="text-white">Baker</h2>
+                </div>
+                <nav class="navbar-expand-lg ">
+                    <ul class="d-flex navbar-nav menu">
+                        <li><a href="javascript:void(0)" class="nav-link text-warning ms-4">Home</a></li>
+                        <li><a href="javascript:void(0)" class="nav-link ms-4">About</a></li>
+                        <li><a href="javascript:void(0)" class="nav-link ms-4">Services</a></li>
+                        <li><a href="javascript:void(0)" class="nav-link ms-4">Portfolio</a></li>
+                        <li><a href="javascript:void(0)" class="nav-link ms-4">Team</a></li>
+                        <li><a href="javascript:void(0)" class="nav-link ms-4">Pricing</a></li>
+                        <li class="drop position-relative"><a href="javascript:void(0)" class="nav-link ms-4 arrow position-relative">Drop Down
+                            <i class="ri-arrow-down-s-line"></i></a>
+                            <div class="drop-menu ms-2 ps-3">
+                                <ul class="navbar-nav flex-column menu2">
+                                    <li><a href="javascript:void(0)" class="nav-link">Drop Down 1</a></li>
+                                    <li class="deep position-relative">
+                                        <a href="javascript:void(0)" class="nav-link">Deep Drop Down
+                                            <i class="ri-arrow-right-s-line"></i></a>
+                                        <div class="deep-menu">
+                                            <ul class="navbar-nav flex-column">
+                                                <li><a href="javascript:void(0)" class="nav-link">Deep Drop Down 1</a></li>
+                                                <li><a href="javascript:void(0)" class="nav-link">Deep Drop Down 2</a></li>
+                                                <li><a href="javascript:void(0)" class="nav-link">Deep Drop Down 3</a></li>
+                                                <li><a href="javascript:void(0)" class="nav-link">Deep Drop Down 4</a></li>
+                                                <li><a href="javascript:void(0)" class="nav-link">Deep Drop Down 5</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="javascript:void(0)" class="nav-link">Drop Down 2</a></li>
+                                    <li><a href="javascript:void(0)" class="nav-link">Drop Down 3</a></li>
+                                    <li><a href="javascript:void(0)" class="nav-link">Drop Down 4</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="javascript:void(0)" class="nav-link ms-5">Contact</a></li>
+                        <button type="button" class="btn btn-danger ms-4" data-bs-toggle="modal" data-bs-target="#modal">Login</button>
+                        <button type="button" class="btn btn-info ms-4" data-bs-toggle="modal" data-bs-target="#modal1">Form</button>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Headder End -->
+    <!-- Banner Start -->
+    <main>
+        <section class="banner d-flex flex-column justify-content-center align-items-center">
+            <div class="carousel carousel-fade" data-bs-ride="carousel" id="slider" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active d-flex justify-content-center align-items-center banner">
+                        <img src="images/banner.jpg" alt="banner" title="banner" width="100%" height="570px">
+                        <div class="banner-item text-center position-absolute">
+                            <h2 class="text-white fs-1">Welcome to Baker</h2>
+                            <h5 class="mt-3 fs-4">We are team of talented designers making websites with Bootstrap</h5>
+                            <a href="javascript:void(0)" class="nav-link mt-4">Get Started</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item d-flex justify-content-center align-items-center banner">
+                        <img src="images/1.jpg" alt="banner" title="banner" width="100%" height="570px">
+                        <div class="banner-item text-center position-absolute">
+                            <h2 class="text-white fs-1">Welcome to Baker</h2>
+                            <h5 class="mt-3 fs-4">We are team of talented designers making websites with Bootstrap</h5>
+                            <a href="javascript:void(0)" class="nav-link mt-4">Get Started</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item d-flex justify-content-center align-items-center banner">
+                        <img src="images/2.jpg" alt="banner" title="banner" width="100%" height="570px">
+                        <div class="banner-item text-center position-absolute">
+                            <h2 class="text-white fs-1">Welcome to Baker</h2>
+                            <h5 class="mt-3 fs-4">We are team of talented designers making websites with Bootstrap</h5>
+                            <a href="javascript:void(0)" class="nav-link mt-4">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="carousel-control-prev" data-bs-target="#slider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button type="button" class="carousel-control-next" data-bs-target="#slider" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            <form>
+                <div class="modal fade" id="modal" data-bs-backdrop="static">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header bg-secondary">
+                                <h2 class="text-danger" style="font-weight: 900;">Login</h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" data-bs-back-drop=""></button>
+                            </div>
+                            <div class="modal-body bg-secondary">
+                                <label class="form-label">User Name :</label>
+                                <input type="text" class="form-control form-control-lg" placeholder="Enter User Name">
+
+                                <label class="form-label mt-2">PassWord :</label>
+                                <input type="Password" class="form-control" placeholder="Enter Your Password">
+                                <div class="form-text">Must be 8-20 characters long.</div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">close</button>
+                                <button type="button" class="btn btn-info" disabled>disabled</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <form>
+                <div class="modal fade" id="modal1" data-bs-backdrop="static">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header bg-info">
+                                <h2 class="text-danger" style="font-weight: 900;">Form</h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" data-bs-back-drop=""></button>
+                            </div>
+                            <div class="modal-body bg-secondary">
+                                <label class="form-label">Name :</label>
+                                <input type="text" class="form-control form-control-lg" placeholder="Enter Your Name">
+
+                                <label class="form-label mt-2">PassWord :</label>
+                                <input type="Password" class="form-control" placeholder="Enter Your Password">
+                                <div class="form-text">Must be 8-20 characters long.</div>
+                                <label class="form-label mt-2">Email :</label>
+                                <div class="input-group mt-1">
+                                    <input type="text" class="form-control" placeholder="Enter Your Email">
+                                    <span class="input-group-text">@example.com</span>
+                                </div>
+                                <div class="form-text">We'll never share your email with anyone else.</div>
+                                <label class="form-label mt-2">Address :</label>
+                                <textarea class="form-control" placeholder="Enter Your Address"></textarea>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">close</button>
+                                <button type="button" class="btn btn-info" disabled>disabled</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <!-- Banner End -->
+        <!-- clients Start -->
+        <section class="clients p-4 text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="images/client-1.png" class="img-fluid" alt="clients" title="clients">
+                    </div>
+                    <div class="col-2">
+                        <img src="images/client-2.png" class="img-fluid" alt="clients" title="clients">
+                    </div>
+                    <div class="col-2">
+                        <img src="images/client-3.png" class="img-fluid" alt="clients" title="clients">
+                    </div>
+                    <div class="col-2">
+                        <img src="images/client-4.png" class="img-fluid" alt="clients" title="clients">
+                    </div>
+                    <div class="col-2">
+                        <img src="images/client-5.png" class="img-fluid" alt="clients" title="clients">
+                    </div>
+                    <div class="col-2">
+                        <img src="images/client-6.png" class="img-fluid" alt="clients" title="clients">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- clients End -->
+        <!-- About Start -->
+        <section class="py">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="images/about.jpg" alt="about" title="about" class="img-fluid">
+                    </div>
+                    <div class="col-6">
+                        <div class="about-title">
+                            <h2 class="mb-4">Voluptatem dignissimos provident quasi</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="about-body text-center p-1">
+                                    <img src="images/a1.png" alt="icon" title="icon" class="mt-4" width="48px">
+                                    <h4 class="mt-3 mb-2">Corporis voluptates sit</h4>
+                                    <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="about-body text-center p-1">
+                                    <img src="images/a2.png" alt="icon" title="icon" class="mt-4" width="48px">
+                                    <h4 class="mt-3 mb-2">Ullamco laboris nisi</h4>
+                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About End -->
+        <!-- Counts Start -->
+        <section class="counts text-center p-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <h2>232</h2>
+                        <p>Clients</p>
+                    </div>
+                    <div class="col-3">
+                        <h2>521</h2>
+                        <p>Projects</p>
+                    </div>
+                    <div class="col-3">
+                        <h2>1463</h2>
+                        <p>Hours Of Support</p>
+                    </div>
+                    <div class="col-3">
+                        <h2>15</h2>
+                        <p>Hard Workers</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- Counts End -->
+        <!-- Srevices Start -->
+        <section class="py">
+            <div class="container">
+                <div class="services-title text-center">
+                    <h2 class="mb-5">SERVICES</h2>
+                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. 
+                        Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+                        Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="services-item mt-4 text-center">
+                            <div class="service-icon1 mx-auto">
+                                <i class="ri-global-line"></i>
+                            </div>
+                            <h4 class="my-3">Lorem ipsum</h4>
+                            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="services-item mt-4 text-center">
+                            <div class="service-icon2 mx-auto">
+                                <i class="ri-file-text-line"></i>
+                            </div>
+                            <h4 class="my-3">Lorem ipsum</h4>
+                            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="services-item mt-4 text-center">
+                            <div class="service-icon3 mx-auto">
+                                <i class="ri-timer-2-fill"></i>
+                            </div>
+                            <h4 class="my-3">Lorem ipsum</h4>
+                            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="services-item mt-4 text-center">
+                            <div class="service-icon4 mx-auto">
+                                <i class="ri-stack-line"></i>
+                            </div>
+                            <h4 class="my-3">Lorem ipsum</h4>
+                            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="services-item mt-4 text-center">
+                            <div class="service-icon5 mx-auto">
+                                <i class="ri-slideshow-3-line"></i>
+                            </div>
+                            <h4 class="my-3">Lorem ipsum</h4>
+                            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="services-item mt-4 text-center">
+                            <div class="service-icon6 mx-auto">
+                                <i class="ri-ancient-gate-line"></i>
+                            </div>
+                            <h4 class="my-3">Lorem ipsum</h4>
+                            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Srevices End -->
+        <!-- call Start -->
+        <section class="call py">
+            <div class="container">
+                <div class="text-center">
+                    <h3>Call To Action</h3>
+                    <p class="text-white mt-2 mb-4">Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                        culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <a href="javascript:void(0)" class="nav-link">Call To Action</a>
+                </div>
+            </div>
+        </section>
+        <!-- call End -->
+        <!-- Testimonials Start -->
+        <section class="py">
+            <div class="container">
+                <div class="test-title mb-4 text-center">
+                    <h2 class="mb-5">TESTIMONIALS</h2>
+                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid
+                        fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui
+                        impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                </div>
+                <div id="test" class="carousel test p-4" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#test" data-bs-slide-to="0" class="active"
+                            aria-label="Slide 1" aria-current="true"></button>
+                        <button type="button" data-bs-target="#test" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#test" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#test" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="test-item">
+                                        <p class="position-relative"><i class="ri-double-quotes-l test-one position-relative"></i>Proin iaculis purus consequat semcure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies
+                                            eget id, aliquam eget nibh et.Maecen aliquam, risus at semper.<i
+                                                class="ri-double-quotes-r test-two position-relative"></i></p>
+                                        <img src="images/test1.jpg" alt="test" title="test" width="80px">
+                                        <h4>Saul Goodman</h4>
+                                        <h6>Ceo & Founder</h6>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="test-item">
+                                        <p> <i class="ri-double-quotes-l test-one position-relative"></i> Export tempor illum tamen malis
+                                            malis eram quae irure esse labore quem cillum quid cillum eram malis quorum
+                                            velit fore eram velit sunt aliqua noster fugiat irure amet legam anim
+                                            culpa.<i class="ri-double-quotes-r test-two position-relative"></i></p>
+                                        <img src="images/test2.jpg" alt="test" title="test" width="80px">
+                                        <h4>Sara Wilsson</h4>
+                                        <h6>Designer</h6>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="test-item">
+                                        <p> <i class="ri-double-quotes-l test-one position-relative"></i> Enim nisi quem export duis
+                                            labore cillum quae magna enim sint quorum nulla quem veniam duis minim
+                                            tempor labore quem eram duis noster aute amet eram fore quis sint minim. <i
+                                                class="ri-double-quotes-r test-two position-relative"></i></p>
+                                        <img src="images/test3.jpg" alt="test" title="test" width="80px">
+                                        <h4>Jena Karlis</h4>
+                                        <h6>Store Owner</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="test-item">
+                                        <p> <i class="ri-double-quotes-l test-one position-relative"></i> Export tempor illum tamen malis
+                                            malis eram quae irure esse labore quem cillum quid cillum eram malis quorum
+                                            velit fore eram velit sunt aliqua noster fugiat irure amet legam anim
+                                            culpa.<i class="ri-double-quotes-r test-two position-relative"></i></p>
+                                        <img src="images/test2.jpg" alt="test" title="test" width="80px">
+                                        <h4>Sara Wilsson</h4>
+                                        <h6>Designer</h6>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="test-item">
+                                        <p> <i class="ri-double-quotes-l test-one position-relative"></i> Enim nisi quem export duis
+                                            labore cillum quae magna enim sint quorum nulla quem veniam duis minim
+                                            tempor labore quem eram duis noster aute amet eram fore quis sint minim. <i
+                                                class="ri-double-quotes-r test-two position-relative"></i></p>
+                                        <img src="images/test3.jpg" alt="test" title="test" width="80px">
+                                        <h4>Jena Karlis</h4>
+                                        <h6>Store Owner</h6>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="test-item">
+                                        <p> <i class="ri-double-quotes-l test-one position-relative"></i> Fugiat enim eram quae cillum
+                                            dolore dolor amet nulla culpa multos export minim fugiat minim velit minim
+                                            dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore
+                                            illum veniam. <i class="ri-double-quotes-r test-two position-relative"></i></p>
+                                        <img src="images/test4.jpg" alt="test" title="test" width="80px">
+                                        <h4>Matt Brandon</h4>
+                                        <h6>Freelancer</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="test-item">
+                                        <p> <i class="ri-double-quotes-l test-one position-relative"></i> Enim nisi quem export duis
+                                            labore cillum quae magna enim sint quorum nulla quem veniam duis minim
+                                            tempor labore quem eram duis noster aute amet eram fore quis sint minim. <i
+                                                class="ri-double-quotes-r test-two position-relative"></i></p>
+                                        <img src="images/test3.jpg" alt="test" title="test" width="80px">
+                                        <h4>Jena Karlis</h4>
+                                        <h6>Store Owner</h6>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="test-item">
+                                        <p> <i class="ri-double-quotes-l test-one position-relative"></i> Fugiat enim eram quae cillum
+                                            dolore dolor amet nulla culpa multos export minim fugiat minim velit minim
+                                            dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore
+                                            illum veniam. <i class="ri-double-quotes-r test-two position-relative"></i></p>
+                                        <img src="images/test4.jpg" alt="test" title="test" width="80px">
+                                        <h4>Matt Brandon</h4>
+                                        <h6>Freelancer</h6>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="test-item">
+                                        <p> <i class="ri-double-quotes-l test-one position-relative"></i> Quis quorum aliqua sint quem
+                                            legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa
+                                            labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa
+                                            fore nisi cillum quid. <i class="ri-double-quotes-r test-two position-relative"></i></p>
+                                        <img src="images/test5.jpg" alt="test" title="test" width="80px">
+                                        <h4>John Larson</h4>
+                                        <h6>Entrepreneur</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="test-item">
+                                        <p> <i class="ri-double-quotes-l test-one position-relative"></i> Quis quorum aliqua sint quem
+                                            legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa
+                                            labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa
+                                            fore nisi cillum quid. <i class="ri-double-quotes-r test-two position-relative"></i></p>
+                                        <img src="images/test5.jpg" alt="test" title="test" width="80px">
+                                        <h4>John Larson</h4>
+                                        <h6>Entrepreneur</h6>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="test-item">
+                                        <p> <i class="ri-double-quotes-l test-one position-relative"></i>Proin iaculis purus consequat sem
+                                            cure digni
+                                            ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies
+                                            eget id,
+                                            aliquam eget nibh et.Maecen aliquam, risus at semper.<i
+                                                class="ri-double-quotes-r test-two position-relative"></i></p>
+                                        <img src="images/test1.jpg" alt="test" title="test" width="80px">
+                                        <h4>Saul Goodman</h4>
+                                        <h6>Ceo & Founder</h6>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="test-item">
+                                        <p> <i class="ri-double-quotes-l test-one position-relative"></i> Export tempor illum tamen malis
+                                            malis eram quae irure esse labore quem cillum quid cillum eram malis quorum
+                                            velit fore eram velit sunt aliqua noster fugiat irure amet legam anim
+                                            culpa.<i class="ri-double-quotes-r test-two position-relative"></i></p>
+                                        <img src="images/test2.jpg" alt="test" title="test" width="80px">
+                                        <h4>Sara Wilsson</h4>
+                                        <h6>Designer</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- Testimonials End -->
+        <!-- Portfolio Start -->
+        <section class="py">
+            <div class="container">
+                <div class="port-title mb-4 text-center">
+                    <h2 class="mb-5">PORTFOLIO</h2>
+                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid
+                        fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui
+                        impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                    <div class="d-flex justify-content-center">
+                        <a href="javascript:void(0)" class="nav-link bg-warning rounded rounded-5 port-btn">All</a>
+                        <a href="javascript:void(0)" class="nav-link  port-btn">App</a>
+                        <a href="javascript:void(0)" class="nav-link  port-btn">Card</a>
+                        <a href="javascript:void(0)" class="nav-link  port-btn">Web</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="port position-relative overflow-hidden mb-4">
+                            <div class="port-item">
+                                <img src="images/port1.jpg" alt="portfolio" title="portfolio" class="img-fluid">
+                                <div class="port-info text-white">
+                                    <p class="h5" style="font-weight: bold;">App 1</p>
+                                    <p>App</p>
+                                    <div class="port-icon d-flex">
+                                        <a href="javascript:void(0)" class="nav-link"><i class="ri-add-line"></i></a>
+                                        <a href="javascript:void(0)" class="nav-link ms-3"><i class="ri-links-fill"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="port position-relative overflow-hidden mb-4">
+                            <div class="port-item">
+                                <img src="images/port2.jpg" alt="portfolio" title="portfolio" class="img-fluid">
+                                <div class="port-info text-white">
+                                    <p class="h5" style="font-weight: bold;">Web 3</p>
+                                    <p>Web</p>
+                                    <div class="port-icon d-flex">
+                                        <a href="javascript:void(0)" class="nav-link"><i class="ri-add-line"></i></a>
+                                        <a href="javascript:void(0)" class="nav-link ms-3"><i class="ri-links-fill"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="port position-relative overflow-hidden mb-4">
+                            <div class="port-item">
+                                <img src="images/port3.jpg" alt="portfolio" title="portfolio" class="img-fluid">
+                                <div class="port-info text-white">
+                                    <p class="h5" style="font-weight: bold;">App 2</p>
+                                    <p>App</p>
+                                    <div class="port-icon d-flex">
+                                        <a href="javascript:void(0)" class="nav-link"><i class="ri-add-line"></i></a>
+                                        <a href="javascript:void(0)" class="nav-link ms-3"><i class="ri-links-fill"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="port position-relative overflow-hidden mb-4">
+                            <div class="port-item">
+                                <img src="images/port4.jpg" alt="portfolio" title="portfolio" class="img-fluid">
+                                <div class="port-info text-white">
+                                    <p class="h5" style="font-weight: bold;">Card 2</p>
+                                    <p>Card</p>
+                                    <div class="port-icon d-flex">
+                                        <a href="javascript:void(0)" class="nav-link"><i class="ri-add-line"></i></a>
+                                        <a href="javascript:void(0)" class="nav-link ms-3"><i class="ri-links-fill"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="port position-relative overflow-hidden mb-4">
+                            <div class="port-item">
+                                <img src="images/port5.jpg" alt="portfolio" title="portfolio" class="img-fluid">
+                                <div class="port-info text-white">
+                                    <p class="h5" style="font-weight: bold;">Web 2</p>
+                                    <p>Web</p>
+                                    <div class="port-icon d-flex">
+                                        <a href="javascript:void(0)" class="nav-link"><i class="ri-add-line"></i></a>
+                                        <a href="javascript:void(0)" class="nav-link ms-3"><i class="ri-links-fill"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="port position-relative overflow-hidden mb-4">
+                            <div class="port-item">
+                                <img src="images/port6.jpg" alt="portfolio" title="portfolio" class="img-fluid">
+                                <div class="port-info text-white">
+                                    <p class="h5" style="font-weight: bold;">App 3</p>
+                                    <p>App</p>
+                                    <div class="port-icon d-flex">
+                                        <a href="javascript:void(0)" class="nav-link"><i class="ri-add-line"></i></a>
+                                        <a href="javascript:void(0)" class="nav-link ms-3"><i class="ri-links-fill"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="port position-relative overflow-hidden mb-4">
+                            <div class="port-item">
+                                <img src="images/port7.jpg" alt="portfolio" title="portfolio" class="img-fluid">
+                                <div class="port-info text-white">
+                                    <p class="h5" style="font-weight: bold;">Card 1</p>
+                                    <p>Card</p>
+                                    <div class="port-icon d-flex">
+                                        <a href="javascript:void(0)" class="nav-link"><i class="ri-add-line"></i></a>
+                                        <a href="javascript:void(0)" class="nav-link ms-3"><i class="ri-links-fill"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="port position-relative overflow-hidden mb-4">
+                            <div class="port-item">
+                                <img src="images/port8.jpg" alt="portfolio" title="portfolio" class="img-fluid">
+                                <div class="port-info text-white">
+                                    <p class="h5" style="font-weight: bold;">Card 3</p>
+                                    <p>Card</p>
+                                    <div class="port-icon d-flex">
+                                        <a href="javascript:void(0)" class="nav-link"><i class="ri-add-line"></i></a>
+                                        <a href="javascript:void(0)" class="nav-link ms-3"><i class="ri-links-fill"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="port position-relative overflow-hidden mb-4">
+                            <div class="port-item">
+                                <img src="images/port9.jpg" alt="portfolio" title="portfolio" class="img-fluid">
+                                <div class="port-info text-white">
+                                    <p class="h5" style="font-weight: bold;">Web 3</p>
+                                    <p>Web</p>
+                                    <div class="port-icon d-flex">
+                                        <a href="javascript:void(0)" class="nav-link"><i class="ri-add-line"></i></a>
+                                        <a href="javascript:void(0)" class="nav-link ms-3"><i class="ri-links-fill"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio End -->
+        <!-- Team Start -->
+        <section class="team py">
+            <div class="container">
+                <div class="team-title text-center">
+                    <h2 class="mb-5">TEAM</h2>
+                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid
+                        fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui
+                        impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <div class=" team-item mt-3">
+                            <div class="team-img">
+                                <img src="images/team-1.jpg" alt="team" title="team" class="img-fluid" width="100%">
+                                <div class="team-social d-flex justify-content-center align-items-center">
+                                    <a href="javascript:void(0)" class="nav-link ms-4" style="font-size: 22px;">
+                                        <i class="ri-twitter-fill"></i></a>
+                                    <a href="javascript:void(0)" class="nav-link ms-4" style="font-size: 22px;">
+                                        <i class="ri-facebook-circle-fill"></i></a>
+                                    <a href="javascript:void(0)" class="nav-link ms-4" style="font-size: 22px;">
+                                        <i class="ri-instagram-line"></i></a>
+                                    <a href="javascript:void(0)" class="nav-link ms-4" style="font-size: 22px;">
+                                        <i class="ri-linkedin-box-fill"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-center team-member p-3">
+                                <h4>Walter White</h4>
+                                <p>Chief Executive Officer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="team-item mt-3">
+                            <div class="team-img">
+                                <img src="images/team-2.jpg" alt="team" title="team" class="img-fluid" width="100%">
+                                <div class="team-social d-flex justify-content-center align-items-center">
+                                    <a href="javascript:void(0)" class="nav-link ms-4" style="font-size: 22px;">
+                                        <i class="ri-twitter-fill"></i></a>
+                                    <a href="javascript:void(0)" class="nav-link ms-4" style="font-size: 22px;">
+                                        <i class="ri-facebook-circle-fill"></i></a>
+                                    <a href="javascript:void(0)" class="nav-link ms-4" style="font-size: 22px;">
+                                        <i class="ri-instagram-line"></i></a>
+                                    <a href="javascript:void(0)" class="nav-link ms-4" style="font-size: 22px;">
+                                        <i class="ri-linkedin-box-fill"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-center team-member p-3">
+                                <h4>Sarah Jhonson</h4>
+                                <p>Product Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="team-item mt-3">
+                            <div class="team-img">
+                                <img src="images/team-3.jpg" alt="team" title="team" class="img-fluid" width="100%">
+                                <div class="team-social d-flex justify-content-center align-items-center">
+                                    <a href="javascript:void(0)" class="nav-link ms-4" style="font-size: 22px;">
+                                        <i class="ri-twitter-fill"></i></a>
+                                    <a href="javascript:void(0)" class="nav-link ms-4" style="font-size: 22px;">
+                                        <i class="ri-facebook-circle-fill"></i></a>
+                                    <a href="javascript:void(0)" class="nav-link ms-4" style="font-size: 22px;">
+                                        <i class="ri-instagram-line"></i></a>
+                                    <a href="javascript:void(0)" class="nav-link ms-4" style="font-size: 22px;">
+                                        <i class="ri-linkedin-box-fill"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-center team-member p-3">
+                                <h4>William Anderson</h4>
+                                <p>CTO</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="team-item mt-3">
+                            <div class="team-img">
+                                <img src="images/team-4.jpg" alt="team" title="team" class="img-fluid" width="100%">
+                                <div class="team-social d-flex justify-content-center align-items-center">
+                                    <a href="javascript:void(0)" class="nav-link ms-4" style="font-size: 22px;">
+                                        <i class="ri-twitter-fill"></i></a>
+                                    <a href="javascript:void(0)" class="nav-link ms-4" style="font-size: 22px;">
+                                        <i class="ri-facebook-circle-fill"></i></a>
+                                    <a href="javascript:void(0)" class="nav-link ms-4" style="font-size: 22px;">
+                                        <i class="ri-instagram-line"></i></a>
+                                    <a href="javascript:void(0)" class="nav-link ms-4" style="font-size: 22px;">
+                                        <i class="ri-linkedin-box-fill"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-center team-member p-3">
+                                <h4>Amanda Jepson</h4>
+                                <p>Accountant</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Team End -->
+        <!-- Pricing Start -->
+        <section class="py">
+            <div class="container">
+                <div class="price-title mb-5 text-center">
+                    <h2 class="mb-5">PRICING</h2>
+                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid
+                        fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui
+                        impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="box text-center">
+                            <h3>Free</h3>
+                            <h4 class="mb-4"><sup>$</sup>0 <span> / month</span></h4>
+
+                            <ul class="navbar-nav">
+                                <li class="mb-3">Aida dere</li>
+                                <li class="mb-3">Nec feugiat nisl</li>
+                                <li class="mb-3">Nulla at volutpat dola</li>
+                                <li class="mb-3 opacity-50"><s class="">Pharetra massa</s></li>
+                                <li class="mb-3 opacity-50"><s>Massa ultricies mi</s></li>
+                            </ul>
+                            <div class="price-btn">
+                                <a href="javascript:void(0)" class="nav-link box-btn">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="box feature text-center">
+                            <h3>Business</h3>
+                            <h4 class="mb-4"><sup>$</sup>19 <span> / month</span></h4>
+
+                            <ul class="navbar-nav">
+                                <li class="mb-3">Aida dere</li>
+                                <li class="mb-3">Nec feugiat nisl</li>
+                                <li class="mb-3">Nulla at volutpat dola</li>
+                                <li class="mb-3">Pharetra massa</li>
+                                <li class="mb-3 opacity-50"><s>Massa ultricies mi</s></li>
+                            </ul>
+                            <div class="price-btn">
+                                <a href="javascript:void(0)" class="nav-link box-btn feature-btn">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="box text-center">
+                            <h3>Developer</h3>
+                            <h4 class="mb-4"><sup>$</sup>29 <span> / month</span></h4>
+
+                            <ul class="navbar-nav">
+                                <li class="mb-3">Aida dere</li>
+                                <li class="mb-3">Nec feugiat nisl</li>
+                                <li class="mb-3">Nulla at volutpat dola</li>
+                                <li class="mb-3">Pharetra massa</li>
+                                <li class="mb-3">Massa ultricies mi</li>
+                            </ul>
+                            <div class="price-btn">
+                                <a href="javascript:void(0)" class="nav-link box-btn">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="box text-center">
+                            <span class="advanced">Advanced</span>
+                            <h3>Ultimate</h3>
+                            <h4 class="mb-4"><sup>$</sup>49 <span> / month</span></h4>
+
+                            <ul class="navbar-nav">
+                                <li class="mb-3">Aida dere</li>
+                                <li class="mb-3">Nec feugiat nisl</li>
+                                <li class="mb-3">Nulla at volutpat dola</li>
+                                <li class="mb-3">Pharetra massa</li>
+                                <li class="mb-3">Massa ultricies mi</li>
+                            </ul>
+                            <div class="price-btn">
+                                <a href="javascript:void(0)" class="nav-link box-btn">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Pricing End -->
+        <!-- Question Start -->
+        <section class="question py">
+            <div class="container">
+                <div class="question-title text-center mb-4">
+                    <h2 class="mb-5">FREQUENTLY ASKED QUESTIONS</h2>
+                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid
+                        fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui
+                        impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                </div>
+                <div class="accordion" id="parent">
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <button type="button" class="accordion-button question-item" data-bs-toggle="collapse"
+                                data-bs-target="#one"><a href="javascript:void(0)" class="nav-link"><i
+                                        class="ri-question-line"></i>Non consectetur a erat nam at lectus
+                                    urna duis? </a></button>
+                        </div>
+                        <div class="accordion-collapse collapse show" id="one" data-bs-parent="#parent">
+                            <div class="accordion-body">
+                                <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet
+                                    non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor
+                                    purus non.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <button type="button" class="accordion-button question-item" data-bs-toggle="collapse"
+                                data-bs-target="#two"><a href="javascript:void(0)" class="nav-link"><i
+                                        class="ri-question-line"></i>Feugiat scelerisque varius morbi enim
+                                    nunc? </a></button>
+                        </div>
+                        <div class="accordion-collapse collapse" id="two" data-bs-parent="#parent">
+                            <div class="accordion-body">
+                                <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum
+                                    velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend
+                                    donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in
+                                    cursus turpis massa tincidunt dui.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <button type="button" class="accordion-button question-item" data-bs-toggle="collapse"
+                                data-bs-target="#three"><a href="javascript:void(0)" class="nav-link"><i
+                                        class="ri-question-line"></i>Dolor sit amet consectetur
+                                    adipiscing elit?</a></button>
+                        </div>
+                        <div class="accordion-collapse collapse" id="three" data-bs-parent="#parent">
+                            <div class="accordion-body">
+                                <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus
+                                    pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit.
+                                    Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis
+                                    tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <button type="button" class="accordion-button question-item" data-bs-toggle="collapse"
+                                data-bs-target="#four"><a href="javascript:void(0)" class="nav-link"><i
+                                        class="ri-question-line"></i>Tempus quam pellentesque nec nam
+                                    aliquam sem et tortor consequat?</a></button>
+                        </div>
+                        <div class="accordion-collapse collapse" id="four" data-bs-parent="#parent">
+                            <div class="accordion-body">
+                                <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse
+                                    in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl
+                                    suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <button type="button" class="accordion-button question-item" data-bs-toggle="collapse"
+                                data-bs-target="#five"><a href="javascript:void(0)" class="nav-link"><i
+                                        class="ri-question-line"></i>Tortor vitae purus faucibus ornare. Varius vel
+                                    pharetra vel turpis nunc eget lorem dolor?</a></button>
+                        </div>
+                        <div class="accordion-collapse collapse" id="five" data-bs-parent="#parent">
+                            <div class="accordion-body">
+                                <p>Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo
+                                    integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc
+                                    eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- Question End -->
+        <!-- Contact Start -->
+        <section class="py">
+            <div class="container">
+                <div class="contact-title text-center mb-5">
+                    <h2 class="mb-5">CONTACT</h2>
+                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid
+                        fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui
+                        impedit suscipit alias ea.
+                        Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="contact-item text-center">
+                            <i class="ri-map-pin-line"></i>
+                            <h3>Our Address</h3>
+                            <p>A108 Adam Street, New York, NY 535022</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="contact-item text-center mt-3">
+                                    <i class="ri-mail-line"></i>
+                                    <h3>Email Us</h3>
+                                    <p style="font-size: 14px;">info@example.com <br />contact@example.com</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="contact-item text-center mt-3">
+                                    <i class="ri-phone-line"></i>
+                                    <h3>Call Us</h3>
+                                    <p style="font-size: 14px;">+1 5589 55488 55 <br />+1 6678 254445 41</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <form class="form-contact text-center p-4">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <input type="text" name="name" class="form-control" placeholder="Your Name">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <input type="email" name="email" class="form-control" placeholder="Your Email">
+                                    </div>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <input type="text" name="" class="form-control" placeholder="Subject">
+                                </div>
+                                <div class="form-group mt-3">
+                                    <textarea name="message" class="form-control" placeholder="Message"
+                                        rows="5"></textarea>
+                                </div>
+                                <div class="text-center mt-3">
+                                    <button type="submit" class="contact-btn">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact End -->
+    </main>
+   <!-- footer Start -->
+   <footer class="py">
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <div class="footer-s1">
+                    <h3 class="mb-2">Baker</h3>
+                    <p>A108 Adam Street<br />New York, NY 535022<br />United
+                        States<br /><br /><strong>Phone:</strong>+1 5589 55488 55
+                        <br /><strong>Email:</strong> info@example.com
+                    </p>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="footer-s2">
+                    <h4 class="pb-2 mb-2">Useful Links</h4>
+                    <ul class="navbar-nav">
+                        <li class="align-items-center d-flex"><i class="ri-arrow-drop-right-line"></i><a
+                                href="javascript:void(0)">Home</a></li>
+                        <li class="align-items-center d-flex"><i class="ri-arrow-drop-right-line"></i><a
+                                href="javascript:void(0)">About us</a></li>
+                        <li class="align-items-center d-flex"><i class="ri-arrow-drop-right-line"></i><a
+                                href="javascript:void(0)">Services</a></li>
+                        <li class="align-items-center d-flex"><i class="ri-arrow-drop-right-line"></i><a
+                                href="javascript:void(0)">Terms of service</a></li>
+                        <li class="align-items-center d-flex"><i class="ri-arrow-drop-right-line"></i><a
+                                href="javascript:void(0)">Privacy policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="footer-s2">
+                    <h4 class="pb-2 mb-2">Our Services</h4>
+                    <ul class="navbar-nav">
+                        <li class="align-items-center d-flex"><i class="ri-arrow-drop-right-line"></i><a
+                                href="javascript:void(0)">Web Design</a></li>
+                        <li class="align-items-center d-flex"><i class="ri-arrow-drop-right-line"></i><a
+                                href="javascript:void(0)">Web Development</a></li>
+                        <li class="align-items-center d-flex"><i class="ri-arrow-drop-right-line"></i><a
+                                href="javascript:void(0)">Product Management</a></li>
+                        <li class="align-items-center d-flex"><i class="ri-arrow-drop-right-line"></i><a
+                                href="javascript:void(0)">Marketing</a></li>
+                        <li class="align-items-center d-flex"><i class="ri-arrow-drop-right-line"></i><a
+                                href="javascript:void(0)">Graphic Design</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="footer-s3">
+                    <h4 class="pb-2 mb-2">Join Our Newsletter</h4>
+                    <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                    <form>
+                        <div class="footer-s4 d-flex position-relative">
+                            <input type="email" class="form-control p-2 rounded-pill">
+                            <button type="button" class="position-absolute top-0 end-0 bottom-0">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="footer2">
+    <div class="container">
+        <div class="py-4 d-flex justify-content-between">
+            <div>
+                <div class="copy">&copy;Copyright <strong>Baker.</strong>All Rights Reserved</div>
+                <div class="credits mt-1" style="font-size: 13px;">Designed by <a href="javascript:void(0)"
+                        class="nav-link d-inline text-warning">BootstrapMade</a></div>
+            </div>
+            <div class="social d-flex text-center">
+                <a href="javascript:void(0)" class="nav-link"><i class="ri-twitter-fill"></i></a>
+                <a href="javascript:void(0)" class="nav-link"><i class="ri-facebook-fill"></i></a>
+                <a href="javascript:void(0)" class="nav-link"><i class="ri-instagram-line"></i></a>
+                <a href="javascript:void(0)" class="nav-link"><i class="ri-skype-fill"></i></a>
+                <a href="javascript:void(0)" class="nav-link"><i class="ri-linkedin-fill"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+   <!-- footer End -->
+    <div class="up d-flex text-center">
+        <a href="#" class="nav-link"><i class="ri-arrow-up-line"></i></a>
+    </div>
+    <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+</body>
+
+</html>
